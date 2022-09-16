@@ -1,0 +1,14 @@
+﻿using RazorDemoLibrary.Areas.UI;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RazorDemoLibrary.Model
+{
+    public interface ICustomControl
+    {
+        public void RegisterControl(LayoutMaster master);
+    }
+}

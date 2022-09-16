@@ -1,0 +1,1085 @@
+﻿/********Правка Settings.master************/
+body {
+    margin: 0px;
+}
+
+.dbf_mainMenu_table {
+    width: 100%;
+}
+
+.dbf_mainMenu_header {
+    height: 50px;
+    /*background-color:#21374c;*/
+    background: url(/UI/Images/bg_header.png) repeat-x scroll left top;
+}
+
+.dbf_mainMenu_tdLeft {
+    vertical-align: middle;
+    padding-top: 15px;
+    text-align: left;
+    float: left;
+
+}
+
+.dbf_mainMenu_tdRight {
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.dbf_mainMenu_tbl {
+    float: right;
+}
+
+.dbf_mainMenu_font {
+    font-family: Arial;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.dbf_mainMenu_literal {
+    margin-left: 30px;
+}
+
+.dbf_mainMenu_tdRightTitle div {
+    margin-left: 30px;
+}
+
+.dbf_mainMenu_tdCurrentUserPic {
+    padding: 30px;
+    float: right;
+}
+
+.dbf_mainMenu_tdCurrentUser {
+    padding: 15px;
+    float: right;
+}
+
+.dbf_mainMenu_imgCurrentUser {
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+
+.dbf_settingsInfoHolder {
+    padding-bottom: 5px;
+}
+
+a.dbf_mainMenu_userLink, a.dbf_mainMenu_userLink:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 11px;
+    height: 0px;
+    background: url(/UI/Images/userpic.png) no-repeat 0px 0px;
+}
+
+    a.dbf_mainMenu_userLink:hover {
+        text-decoration: underline;
+    }
+
+.dbf_mainContent {
+    padding: 15px;
+}
+
+.dbf_info .dbf_errorpanel {
+    margin-bottom: 15px;
+}
+
+/*******Правка Settings.master - конец*******/
+
+
+
+
+/*********************** GlobalSettings.aspx ******************/
+.dbf_table_links td {
+    vertical-align: top;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.dbf_tdrect {
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+.dbf_tdlink {
+    padding-top: 6px;
+}
+
+
+
+.dbf_font {
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.dbf_font_big {
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+
+a.dbf_link, a.dbf_link:visited {
+    color: #003798;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+    a.dbf_link:hover {
+        color: #003798;
+        text-decoration: underline;
+        font-family: Tahoma;
+        font-size: 11px;
+    }
+
+
+a.dbf_link_line, a.dbf_link_line:visited {
+    color: #003798;
+    text-decoration: underline;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+    a.dbf_link_line:hover {
+        color: #003798;
+        text-decoration: none;
+        font-family: Tahoma;
+        font-size: 11px;
+    }
+
+a.dbf_link_big, a.dbf_link_big:visited {
+    color: #003399;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+
+    a.dbf_link_big:hover {
+        color: #000000;
+        text-decoration: underline;
+        font-family: Tahoma;
+        font-size: 10pt;
+    }
+
+
+/*toolbar*/
+.dbf_toolbar {
+    background: url(/images/toolgrad.gif) repeat-x scroll top #d7e8ff;
+    width: 100%;
+    border: 1px solid #83b0ec;
+}
+
+    .dbf_toolbar td {
+        vertical-align: top;
+        white-space: nowrap;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+.dbf_tdtoolbar_image {
+    padding-right: 3px;
+}
+
+.dbf_tdtoolbar_link {
+    padding-top: 1px !important;
+}
+
+.dbf_tdtoolbar_separator {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #83b0ec;
+}
+
+a.dbf_toolbarLink:hover {
+    color: #003798;
+    text-decoration: underline !important;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+a.dbf_toolbarLink, a.dbf_toolbarLink:visited {
+    color: #003798;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+
+
+a.dbf_toolbarLink_disabled:hover {
+    color: #808080;
+    text-decoration: underline !important;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+a.dbf_toolbarLink_disabled, a.dbf_toolbarLink_disabled:visited {
+    color: #808080;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.dbf_imgDelete_disabled {
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+}
+
+/*description*/
+.dbf_description {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4c4c4c;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.dbf_description_bold {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #000000;
+    font-weight: 700;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/*dbf_grid*/
+.dbf_grid {
+    width: 100%;
+    border-bottom: 1px solid #8ebbf5;
+}
+
+    .dbf_grid td {
+        font-family: Tahoma;
+        font-size: 11px;
+        color: #000000;
+        padding: 3px 8px 4px 8px;
+        vertical-align: top;
+    }
+
+.dbf_tdgrid_header {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4c4c4c !important;
+    background-color: #f2f2f2;
+    background-image: url(/images/viewheadergrad.gif);
+    background-repeat: repeat-x;
+    white-space: nowrap;
+}
+
+.dbf_trgrid_alternate {
+    background-color: #f2f2f2;
+}
+
+.dbf_grid_footer {
+    height: 2px !important;
+    padding: 0px !important;
+}
+
+/******settingsInfo******/
+.dbf_pageTitle {
+    width: 100%;
+}
+
+    .dbf_pageTitle td {
+        font-family: Verdana;
+        font-size: 16pt;
+        vertical-align: top;
+        padding-right: 8px;
+        white-space: nowrap;
+        color: #000000;
+        padding-left: 150px;
+    }
+
+a.dbf_pageTitle_link, a.dbf_pageTitle_link:visited {
+    color: #ffffff !important;
+    text-decoration: underline;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+    a.dbf_pageTitle_link:hover {
+        color: #ffffff !important;
+        text-decoration: none !important;
+        font-family: Arial;
+        font-size: 14px;
+    }
+
+
+.dbf_settingsInfo {
+    border: 0px;
+    width: 100%;
+    background-image: url(/images/settingsgraphic.jpg);
+    background-repeat: repeat-x;
+    /*margin-top:-14px;*/
+}
+
+.dbf_settingsInfo_divInfo {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dbf_settingsInfo_header {
+    font-family: Tahoma;
+    font-size: 11px !important;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.dbf_settingsInfo_headerTitle {
+    font-family: Verdana;
+    font-size: 11px;
+    color: #204d89;
+    width: 230px;
+    padding-bottom: 8px;
+    vertical-align: top;
+}
+
+.dbf_settingsInfo_headerValue {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #000000;
+    vertical-align: top;
+}
+
+.dbf_settingsInfo_attention {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #000000;
+    vertical-align: top;
+    color: #ff7000;
+}
+
+.dbf_settingsInfo_sectionHeader {
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: 700;
+    color: #000000;
+    border: 1px solid #add1ff;
+    background-image: url(/images/linksectiongrad.gif);
+    background-repeat: repeat-x;
+    padding: 4px;
+}
+
+
+a.dbf_settingsInfo_linkOperation, a.dbf_settingsInfo_linkOperation:visited {
+    color: #3966bf;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+    a.dbf_settingsInfo_linkOperation:hover {
+        color: #000000;
+        text-decoration: underline;
+        font-family: Tahoma;
+        font-size: 11px;
+    }
+
+a.dbf_settingsInfo_linkOperation_safety, a.dbf_settingsInfo_linkOperation_safety:visited {
+    color: Green;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+    a.dbf_settingsInfo_linkOperation_safety:hover, a.dbf_settingsInfo_linkOperation_dangerous:hover {
+        text-decoration: underline;
+    }
+
+a.dbf_settingsInfo_linkOperation_dangerous, a.dbf_settingsInfo_linkOperation_dangerous:visited {
+    color: Red;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+
+/******************************************/
+
+
+/**** EditPage ****/
+.dbf_edit_sectionline {
+    background-color: #d9d9d9;
+    padding: 0px !important;
+    height: 1px !important;
+}
+
+.dbf_edit_sectionTitle {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.dbf_edit_sectionDescription {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4c4c4c;
+    padding-right: 10px;
+}
+
+.dbf_edit_section {
+    background-color: #ebf3ff;
+    width: 400px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 20px 10px 10px;
+}
+
+.dbf_edit_Button {
+    font-family: Tahoma;
+    font-size: 11px;
+    height: 2.1em;
+    width: 11.5em;
+}
+
+@-moz-document url-prefix() {
+    .dbf_edit_Button {
+        padding-bottom: 2px;
+    }
+}
+
+.dbf_edit_hidden {
+    display: none;
+}
+
+.dbf_edit_textBox {
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 220px;
+}
+
+.dbf_edit_textBox_small {
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 100px;
+}
+
+.dbf_edit_intBox {
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 100px;
+}
+
+.dbf_edit_intBox_small {
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 50px;
+}
+
+.dbf_edit_selector {
+    font-family: Tahoma;
+    font-size: 11px;
+    min-width: 220px;
+}
+
+.dbf_edit_optionTitle {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    padding-top: 10px;
+}
+
+.dbf_edit_optionFont {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+}
+
+.dbf_edit_optionOffset {
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.dbf_assemblyName {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #303030;
+    margin-top: 10px;
+}
+
+.dbf_divTypes_grouped {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    padding-left: 20px;
+}
+
+.dbf_divTypes {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+}
+
+.dbf_divTypesTitle {
+    float: left;
+}
+
+.dbf_divChangeTypesDisplayMode {
+    padding-left: 30px;
+    float: left;
+}
+/******************/
+
+
+/*********************** InformerControl ******************/
+.dbf_InformerControl {
+    border: 1px solid #ffdf88;
+    background-color: #fff9de;
+    margin-bottom: 10px;
+}
+
+    .dbf_InformerControl td {
+        font-family: Tahoma;
+        font-size: 10pt;
+        padding: 3px;
+    }
+/******************************************/
+
+/*********************** ListView.aspx ******************/
+.dbf_toolbar_listView {
+    background: url(/images/toolgrad.gif) repeat-x scroll top #d7e8ff;
+    width: 100%;
+    border: 1px solid #83b0ec;
+}
+
+    .dbf_toolbar_listView td {
+        vertical-align: top;
+        white-space: nowrap;
+        height: 19px;
+    }
+
+.dbf_tdtoolbar_image_listView {
+    padding-right: 3px;
+}
+
+.dbf_tdtoolbar_link_listView {
+    padding-top: 3px !important;
+}
+
+.dbf_tdtoolbar_separator_listView {
+    padding-top: 5px !important;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #83b0ec;
+}
+
+/***********************FieldsEditOrder.aspx***********************/
+.dbf_editOrder_cell {
+    border-bottom: solid 1px #d9d9d9;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4c4c4c;
+    padding: 1px 0px;
+}
+
+.dbf_editOrder_header {
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #525252;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dbf_editOrder_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dbf_editOrder_table_nowrap {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .dbf_editOrder_table_nowrap td {
+        white-space: nowrap;
+        padding-right: 20px;
+    }
+
+/**********************************************/
+
+
+
+
+/*********************Error.aspx***************************/
+.er_container {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.er_root {
+    border: 1px solid #e3e8ee;
+    background-color: #fafcff;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color:#edf3f9,strength:5,direction:135);
+    margin-top: 120px;
+}
+
+.er_tbContent {
+    width: 100%;
+}
+
+.er_tdImage {
+    padding: 25px;
+    vertical-align: top;
+}
+
+.er_tdContent {
+    width: 100%;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.er_content {
+    font-family: Tahoma;
+    font-size: 10pt;
+    color: #003759;
+}
+
+.er_tdClose {
+    padding: 10px;
+    padding-top: 3px;
+    vertical-align: top;
+}
+
+a.er_link, a.er_link:visited {
+    color: #0072bc;
+    text-decoration: underline;
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+
+    a.er_link:hover {
+        color: #000000;
+        text-decoration: none;
+        font-family: Tahoma;
+        font-size: 10pt;
+    }
+/**********************************************************/
+
+
+/****order_edit*****/
+.dbf_orderEdit {
+    font-family: Tahoma;
+    font-size: 11px;
+}
+/*******************/
+
+
+
+/*****************ListViewEdit.aspx****************************/
+.dbf_lvEdit_sortHeader {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    font-weight: 700;
+}
+
+.dbf_lvEdit_tdSortSection {
+    padding-top: 10px;
+}
+
+
+.dbf_lvEdit_groupHeader {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    font-weight: 700;
+}
+
+.dbf_lvEdit_tdGroupSection {
+    padding-top: 10px;
+}
+/**************************************************************/
+
+/*****************ListView.aspx****************************/
+.dbf_lv_viewTitleCell {
+    padding-top: 6px;
+    font-family: Verdana;
+    font-size: 11px;
+    color: #003399;
+}
+
+.dbf_lv_viewSelectCell {
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.lv_viewSelect {
+    font-family: Verdana;
+    font-size: 11px;
+    color: #003399;
+}
+
+.lv_tbfilterActions td {
+    height: auto !important;
+}
+/**************************************************************/
+
+/*WebContent.aspx*/
+.dbf_listNameCell {
+    width: 0%;
+    white-space: nowrap;
+    padding-right: 50px !important;
+}
+
+
+
+
+/**************ListFormMarkupControls.aspx****************/
+.dbf_lf_markupControl {
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 12px;
+    clear: both;
+}
+
+.dbf_lf_greenDescription {
+    color: green;
+    font-family: Tahoma;
+    font-size: 11px;
+    padding-bottom: 3px;
+    float: left;
+    padding-right: 15px;
+}
+
+.dbf_lf_orangeDescription {
+    color: #ff7000;
+    font-family: Tahoma;
+    font-size: 11px;
+    padding-bottom: 3px;
+    float: left;
+    padding-right: 15px;
+}
+
+.dbf_lf_redDescription {
+    color: red;
+    font-family: Tahoma;
+    font-size: 11px;
+    padding-bottom: 3px;
+    float: left;
+    padding-right: 15px;
+}
+
+.div_lf_showHideLists {
+    float: left;
+    margin-top: -3px;
+}
+
+
+/************************ListSettings************************/
+.dbf_keyFieldName {
+    position: relative;
+    padding-right: 16px;
+}
+
+    .dbf_keyFieldName div {
+        background: url(/UI/ConfigScripts/Images/key.png) no-repeat 1px -1px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 16px;
+        height: 13px;
+    }
+
+.dbf_listFeature1 {
+    position: relative;
+    padding-right: 24px;
+}
+
+.dbf_listFeature2 {
+    position: relative;
+    padding-right: 44px;
+}
+
+.dbf_listFeature1 .container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 16px;
+}
+
+.dbf_listFeature2 .container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 16px;
+}
+
+
+.dbf_storesConfigData {
+    background: url(/UI/ConfigScripts/Images/config.png) no-repeat 1px -1px;
+    float: left;
+    width: 20px;
+    height: 16px;
+}
+
+.dbf_storesUserData {
+    background: url(/UI/Images/userData.png) no-repeat 1px -1px;
+    float: left;
+    width: 20px;
+    height: 16px;
+}
+
+
+.dbf_watingHolder {
+    position: relative;
+    display: inline-block;
+    padding-right: 22px;
+}
+
+    .dbf_watingHolder div {
+        background: url(/UI/ConfigScripts/Images/waiting.gif) no-repeat 0px 0px;
+        position: absolute;
+        top: -1px;
+        right: 0px;
+        width: 16px;
+        height: 16px;
+        display: none;
+    }
+
+
+
+.dbf_edit_sectionTable {
+    width: 100%;
+}
+
+.dbf_edit_sectionCell {
+    border-top: 1px solid #d9d9d9;
+    vertical-align: top;
+    text-align: left;
+}
+
+.dbf_edit_sectionTable .descriptionCell {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    font-weight: 700;
+    padding: 10px 10px 10px 0px;
+}
+
+.dbf_edit_sectionTable .contentCell {
+    font-family: Tahoma;
+    font-size: 11px;
+    padding: 10px 20px 10px 10px;
+    background-color: #ebf3ff;
+    width: 900px;
+}
+
+.dbf_edit_sectionTable .footerCell {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.dbf_edit_content {
+}
+
+.dbf_edit_summaryTitle {
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: 700;
+    color: #525252;
+}
+
+.dbf_edit_control {
+    padding-top: 3px;
+    white-space: nowrap;
+}
+
+    .dbf_edit_control .dbf_font {
+        white-space: normal;
+    }
+
+.dbf_edit_controlTitle {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    padding: 10px 0px 0px 0px;
+    white-space: nowrap;
+}
+
+    .dbf_edit_controlTitle .dbf_font {
+        white-space: normal;
+    }
+
+.dbf_edit_controlTitle_first {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    padding: 0px 0px 0px 0px;
+    white-space: nowrap;
+}
+
+    .dbf_edit_controlTitle_first .dbf_font {
+        white-space: normal;
+    }
+
+.dbf_edit_subTitle {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #242424;
+    padding: 10px 0px 0px 0px;
+    white-space: nowrap;
+    border-bottom: 1px solid #242424;
+    display: inline-block;
+}
+
+.dbf_edit_limitedTitle {
+    width: 240px;
+    white-space: normal;
+}
+
+    .dbf_edit_limitedTitle .dbf_edit_controlTitle, .dbf_edit_limitedTitle .dbf_edit_control {
+        white-space: normal;
+    }
+
+.dbf_edit_textValidator {
+    font-family: Tahoma;
+    font-size: 11px;
+    max-width: 220px;
+    color: red;
+    white-space: normal;
+}
+
+.dbf_edit_controlTitleText {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+    padding: 12px 0px 0px 0px;
+}
+
+.dbf_splitTable {
+}
+
+    .dbf_splitTable td.splitCell {
+        vertical-align: top;
+        text-align: left;
+        padding-right: 80px;
+    }
+
+.dbf_edit_topOffset {
+    padding-top: 10px;
+}
+
+.dbf_edit_bottomOffset {
+    padding-bottom: 10px;
+}
+
+.dbf_edit_checkTopOffset {
+    padding-top: 22px;
+}
+
+.dbf_edit_checkTooltip .dsc_tooltip {
+    margin-top: 5px;
+}
+
+.dbf_edit_lineSplitter {
+    border-bottom: 1px solid #d9d9d9;
+    padding-top: 10px;
+    margin-left: -10px;
+    margin-right: -20px;
+}
+
+.dbf_edit_font {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #525252;
+}
+
+.dbf_nowrap {
+    white-space: nowrap;
+}
+
+.dbf_jobDisplayType {
+    min-width: 350px;
+}
+
+.dbf_jobType {
+    padding-left: 30px !important;
+}
+
+.dbf_sizeLabel {
+    display: inline-block;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.dbf_handlersOrderTable {
+    margin-top: 5px;
+}
+
+    .dbf_handlersOrderTable th {
+        padding: 3px 8px 0px 8px;
+        font-family: Tahoma;
+        font-size: 11px;
+        text-align: left;
+        vertical-align: top;
+        white-space: nowrap;
+        color: #4c4c4c;
+        font-weight: bold;
+    }
+
+    .dbf_handlersOrderTable td {
+        padding: 3px 8px 4px 8px;
+        font-family: Tahoma;
+        font-size: 11px;
+        text-align: left;
+        vertical-align: top;
+        white-space: nowrap;
+    }
+
+.dbf_handlerOrder_header {
+    padding-left: 13px;
+}
+
+.dbf_handler_groupHeader td {
+    padding-left: 0px;
+    padding-top: 8px;
+    color: #525252;
+    text-decoration: underline;
+}
+
+.dbf_handlersOrderTable .dbf_handlerOrder {
+    padding-left: 13px;
+    position: relative;
+}
+
+.dbf_handlerUp {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 0px;
+    width: 11px;
+    height: 14px;
+    background: url(/_layouts/WSS/WSSC.V4.SYS.Fields.Lookup/Images/moveup.png) no-repeat 0px 0px;
+}
+
+.dbf_handlerDown {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 12px;
+    width: 11px;
+    height: 14px;
+    background: url(/_layouts/WSS/WSSC.V4.SYS.Fields.Lookup/Images/movedown.png) no-repeat 0px 0px;
+}
+
+.dbf_handlersOrderTable .offset {
+    padding-right: 20px;
+}

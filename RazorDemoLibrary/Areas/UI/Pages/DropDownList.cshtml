@@ -1,0 +1,58 @@
+﻿@page "{handler?}"
+@using RazorDemoLibrary.Model
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model RazorDemoLibrary.Areas.UI.Pages.DropDownListModel
+@{
+    Layout = "_LayoutMaster";
+}
+@section mainContent{
+    <table>
+    <tr>
+        <td style="vertical-align: top;">
+            @Html.DropDownListFor(m => m.SelectedStaffId, new SelectList(@Model.Staff, "Id", "Name"))
+            
+
+            <div>
+                @Model.DivText
+
+            </div>
+
+        </td>
+
+
+        <td style="vertical-align: top;">
+            
+            
+            @Html.DropDownListFor(m => m.SecondSelectedStringValue, new SelectList(new List<Person>{
+
+                new Person{ Id = 1, Name = "Mike", Department = "IT"},
+                new Person{ Id = 2, Name = "Pete", Department = "Sales"},
+                new Person{ Id = 3, Name = "Katy", Department = "Admin"},
+                new Person{ Id = 4, Name = "Dean", Department = "Sales"}
+            }, "Name", "Name"))
+
+            <div>
+                @Model.SecondDivText
+
+            </div>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px" align="right" id="tblButtons">
+    <tr>
+
+
+        <td align="left" style="padding-right: 5px">
+            <input type="submit" class="dbf_edit_Button" asp-page-handler="click" value="OK" />
+        </td>
+
+        <td align="left" style="padding-right: 5px">
+            <input type="submit" class="dbf_edit_Button" asp-page-handler="secondclick" value="SecondOK" />
+        </td>
+    </tr>
+</table>
+}

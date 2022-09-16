@@ -1,0 +1,64 @@
+﻿<!doctype html>
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        @Model.PageTitle
+    </title>
+    
+    @foreach (string res in @Model.ScriptResources)
+    {
+        
+        <script type='text/javascript' src=@res asp-append-version="true"></script>
+    }
+    @foreach (string res in @Model.StyleResources)
+    {
+        <link type='text/css' rel='stylesheet' charset='UTF-8' href=@res asp-append-version="true"/>
+    }
+</head>
+<body>
+    <form id="form1" runat="server" method="POST">
+        <div>
+            <table border='0' cellpadding='0' cellspacing='0' class='dbf_mainMenu_table'>
+                <tr class='dbf_mainMenu_header'>
+
+                    <td class='dbf_mainMenu_tdLeft'>
+                        <table class="dbf_mainMenu_tbl" border='0' cellpadding='0' cellspacing='0'>
+                            <tr>
+                                <td class='dbf_mainMenu_tdRightTitle dbf_mainMenu_font'>
+                                    <div>
+                                        <a class='dbf_pageTitle_link' href='/'>Главная</a>
+                                    </div>
+                                </td>
+                                <td class='dbf_mainMenu_tdRightTitle dbf_mainMenu_font'>
+                                    <div>
+                                        @Html.Raw(@Model.RightTitle)
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </td>
+                    <td class='dbf_mainMenu_tdLeft dbf_mainMenu_font dbf_mainMenu_literal'>
+                        @Html.Raw(@Model.LeftTitle)
+                    </td>
+                    <td class='dbf_mainMenu_tdCurrentUser'>
+                        <a class='dbf_mainMenu_userLink' href=@Model.HplCurrentUserURL>@Model.HplCurrentUserTitle</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' class='dbf_mainContent'>
+
+
+                        @RenderSection("mainContent", required: false)
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+    @RenderBody()
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

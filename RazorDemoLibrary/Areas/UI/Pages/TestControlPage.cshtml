@@ -1,0 +1,27 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, RazorDemoLibrary
+@model RazorDemoLibrary.Areas.UI.Pages.TestControlPageModel
+@{
+    Layout = "_LayoutMaster";
+}
+@section mainContent{
+    <div>
+    <custom-control asp-for=@Model.TextBoxControl name="Value"></custom-control>
+
+    <div>
+    @Model.DivText
+    
+    </div>
+    </div>
+
+    <table border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px" align="right" id="tblButtons">
+    <tr>
+
+
+        <td align="left" style="padding-right: 5px">
+            <input type="submit" class="dbf_edit_Button" asp-page-handler="click" value="OK" />
+        </td>
+    </tr>
+</table>
+}

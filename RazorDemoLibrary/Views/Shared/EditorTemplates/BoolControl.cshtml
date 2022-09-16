@@ -1,0 +1,19 @@
+﻿@using RazorDemoLibrary.ViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model BoolControl
+@{
+    <div>
+    @Html.DisplayFor(m => m.Name)
+        
+    @Html.CheckBoxFor(m => m.Value, new {
+
+    @class = "dbf_edit_textBox-field"
+    })
+
+        @Html.HiddenFor(m => m.TypeName)
+         @Html.HiddenFor(m => m.Name)
+    </div>
+    <div>
+    @Model.Text
+    </div>
+}

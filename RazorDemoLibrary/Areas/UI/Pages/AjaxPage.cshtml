@@ -1,0 +1,10 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model RazorDemoLibrary.Areas.UI.Pages.AjaxPageModel
+@{
+    Layout = "_LayoutMaster";
+}
+@section mainContent{
+
+    <input type="button" value="GetTime" onclick="javascript:GetServerTime()"/>
+}

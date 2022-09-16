@@ -1,0 +1,10 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, RazorDemoLibrary
+@model RazorDemoLibrary.Areas.UI.Pages.GridPageModel
+@{
+    Layout = "_LayoutMaster";
+}
+@section mainContent{
+    <custom-grid total-rows='3', total-columns='4'></custom-grid>
+}

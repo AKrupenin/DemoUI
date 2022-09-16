@@ -1,0 +1,54 @@
+﻿@page "{handler?}"
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model RazorDemoLibrary.Areas.UI.Pages.AscxPageModel
+@{
+    Layout = "_LayoutMaster";
+}
+@section mainContent{
+
+<table>
+    <tr>
+        <td style="vertical-align: top;">
+            <div id="firsTXTBox">
+              @Html.EditorFor(m => m.TextBoxValue)  
+            </div>
+
+
+            <div>
+                @Model.DivText
+
+            </div>
+
+        </td>
+
+
+        <td style="vertical-align: top;">
+            <div id="secondTXTBox">
+                @Html.EditorFor(m => m.SecondTextBoxValue)  
+            </div>
+
+            <div>
+                @Model.SecondDivText
+
+            </div>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px" align="right" id="tblButtons">
+    <tr>
+
+
+        <td align="left" style="padding-right: 5px">
+            <input type="submit" class="dbf_edit_Button" asp-page-handler="click" value="OK" />
+        </td>
+
+        <td align="left" style="padding-right: 5px">
+            <input type="submit" class="dbf_edit_Button" asp-page-handler="secondclick" value="SecondOK" />
+        </td>
+    </tr>
+</table>
+}
