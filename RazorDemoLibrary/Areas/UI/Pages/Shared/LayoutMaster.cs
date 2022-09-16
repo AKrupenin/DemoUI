@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace RazorDemoLibrary.Areas.UI
 {
+    /// <summary>
+    /// Мастер страница
+    /// </summary>
     public class LayoutMaster : PageModel
     {
         public LayoutMaster()

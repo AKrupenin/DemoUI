@@ -14,16 +14,17 @@ namespace RazorDemoLibrary.Areas.UI.Pages
         }
         public void OnGet()
         {
-            string assemblyPath = @"C:\Users\akrupenin\source\repos\CustomControl\CustomControl\bin\Debug\net6.0\CustomControl.dll";
-            string customClass = "CustomControl.TestControl";
+            ////
+            //string assemblyPath = @"C:\Users\akrupenin\source\repos\CustomControl\CustomControl\bin\Debug\net6.0\CustomControl.dll";
+            //string customClass = "CustomControl.TestControl";
 
-            Assembly assembly = Assembly.LoadFile(assemblyPath);
+            //Assembly assembly = Assembly.LoadFile(assemblyPath);
 
-            Type type = assembly.GetType(customClass);
+            //Type type = assembly.GetType(customClass);
 
-            ICustomControl customControl = (ICustomControl)Activator.CreateInstance(type);
+            //ICustomControl customControl = (ICustomControl)Activator.CreateInstance(type);
 
-            customControl.RegisterControl(this);
+            //customControl.RegisterControl(this);
         }
     }
 }

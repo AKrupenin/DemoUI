@@ -13,6 +13,7 @@ namespace RazorDemoLibrary.Areas.UI.Pages
 
         }
 
+        //”казываем, что св-во должно биндитс€ при сабмите, иначе при вызове обработчика св-во будет null
         [BindProperty(SupportsGet = true)]
         public TextBoxControl TextBoxValue { get; set; }
 
