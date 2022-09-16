@@ -1,6 +1,6 @@
 ﻿function GetServerTime() {
     $.ajax({
-        url: '/api/Ajax/Test',
+        url: '/UI/GetServerTimeHandler',
         data: {
 
         }
